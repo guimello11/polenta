@@ -1,0 +1,392 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+body {
+    color: #57701e;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2{
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #57701e;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.24);
+    height: 4rem;
+}
+
+.logo img {
+   max-width: 60%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px;
+    border-radius: 35px;
+}
+
+nav ul li a:hover {
+    color: #57701e;
+    background-color: white;
+    border: solid white 1px;
+}
+
+#reserva {
+    background-color: white;
+    color: #57701e;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#reserva:hover {
+    background-color: #57701e;
+    color: white;
+    border: solid white 1px;
+}
+
+/* Main Section */
+#main {
+    display: flex;
+    justify-content: center;
+
+    background: url('logo.png') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+
+    height: 100vh;
+    -webkit-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.26);
+box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.26);
+}
+
+#main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #57701e;
+}
+
+#main .container {
+    position: relative;
+    z-index: 1;
+}
+
+#main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#main p {
+    margin-bottom: 2rem;
+}
+
+.main-content p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #57701e;
+    padding: 0.75rem;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: .4rem;
+    transition: background-color 0.3s;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.icon:hover {
+    background-color: #57701e;
+    color: white;
+    border: solid white 1px;
+}
+
+.icon i{
+    font-size: 1.5rem;
+}
+
+.phone-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white; /* Cor de fundo verde */
+    color: #57701e; /* Cor do texto */
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.phone-button i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Efeito ao passar o mouse */
+.phone-button:hover {
+    background-color: white; /* Cor de fundo mais escura no hover */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* Efeito ao clicar */
+.phone-button:active {
+    transform: scale(0.95); /* Reduz levemente o botão */
+}
+
+#menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+}
+
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    padding: 0 7rem;
+    font-size: 1.5rem;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    width: 25%;
+    height: 30rem;
+    
+    
+
+}
+
+.dish img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    -webkit-box-shadow: -1px 11px 35px 0px rgba(0,0,0,0.28);
+-moz-box-shadow: -1px 11px 35px 0px rgba(0,0,0,0.28);
+box-shadow: -1px 11px 35px 0px rgba(0,0,0,0.28);
+transition: transform 0.3s ease;
+}
+
+.dish img:hover{
+    transform: scale(1.1); 
+}
+
+
+.dish-title{
+    text-align: center;
+    margin: 5px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.dish-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+
+/* Endereço */
+#endereco {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.endereco-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+/* História do Estabelecimento */
+#historia {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.historia-content {
+    max-width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.historia-content p {
+    font-size: 1.1rem;
+    color: #57701e;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #57701e;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 15rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    #dishes{
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #reserva {
+        text-align: center;
+    }
+
+    .pratos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content p{
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #menu .section-subtitle {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 2rem;
+    }
+
+    footer p{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+
+   #menu{
+    display: none;
+   }
+}
