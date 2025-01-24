@@ -319,6 +319,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 15rem;
+    gap: 4rem;
 }
 
 footer p {
@@ -368,10 +369,6 @@ footer p {
 
     footer{
         margin-top: 2rem;
-    }
-
-    footer p{
-        display: none;
     }
     
 }
