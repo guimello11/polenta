@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+    line-height: 1.6;
+}
+
+.menu-container {
+    min-height: 100vh;
+    background-color: #f4f1ea;
+}
+
+.menu-content {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.menu-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: #57701e;
+    margin-bottom: 4rem;
+}
+
+.menu-section {
+    margin-bottom: 3rem;
+}
+
+.menu-section-title {
+    color: #57701e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #57701e;
+}
+
+.menu-section strong{
+    color: #57701e;
+    font-size: 1.5rem;
+}
+
+strong.pais{
+    color: #57701e;
+    font-size: 1.2rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-item-name {
+    color: #57701e;
+    font-size: 1.125rem;
+}
+
+.menu-item-price {
+    color: #57701e;
+    font-weight: 600;
+}
+
+
+.back-button {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #57701e;
+    color: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 0.7rem !important;
+}
+
+.back-button:hover {
+    background-color: #57701e;
+}
+
+.back-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.back-button:hover svg {
+    transform: translateX(-0.25rem);
+}
+
+
+
+@media (min-width: 768px) {
+    .menu-title {
+        font-size: 3rem;
+    }
+}
